@@ -18,3 +18,8 @@ logging:
     org.springframework.security: DEBUG
     root: debug
     web: debug
+
+auth-service:
+  hostname: localhost
+  port: 8080
+  contextPath: /uaa
