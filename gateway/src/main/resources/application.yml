@@ -24,10 +24,22 @@ zuul:
     account:
       path: /account/**
       sensitiveHeaders: 
-      serviceId: account-service
+      serviceId: account
+    customer:
+      path: /customer/**
+      sensitiveHeaders:
+      serviceId: customer
       
 eureka:
   client:
     registerWithEureka: false
     serviceUrl:
       defaultZone: http://10.128.249.89:8761/eureka/
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000

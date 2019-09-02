@@ -18,7 +18,7 @@ public class CustomerClientTest {
         resourceDetails.setUsername("piomin");
         resourceDetails.setPassword("piot123");
         resourceDetails.setAccessTokenUri("http://10.128.249.89:9999/oauth/token");
-        resourceDetails.setClientId("customer-service");
+        resourceDetails.setClientId("customer");
         resourceDetails.setClientSecret("secret");
         resourceDetails.setGrantType("password");
         resourceDetails.setScope(Arrays.asList("read"));

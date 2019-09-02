@@ -9,6 +9,6 @@ INSERT INTO user_authority (id,authority) VALUES (1, 'ROLE_USER');
 INSERT INTO user_authority (id,authority) VALUES (1, 'ROLE_ADMIN');
 
 INSERT INTO oauth_client_details (client_id, client_secret, scope, authorized_grant_types, access_token_validity, additional_information)
-VALUES ('account-service', 'secret', 'read', 'authorization_code,password,refresh_token,implicit', '900', '{}');
+VALUES ('account', 'secret', 'read', 'authorization_code,password,refresh_token,implicit', '900', '{}');
 INSERT INTO oauth_client_details (client_id, client_secret, scope, authorized_grant_types, access_token_validity, additional_information)
-VALUES ('customer-service', '$2a$10$6R5teslA8n/Jr6vVZ/h3SuDQTS4DlByZJy0H8H05pd24i.ibGZTdW', 'read', 'authorization_code,password,refresh_token,implicit', '900', '{}');
+VALUES ('customer', '$2a$10$6R5teslA8n/Jr6vVZ/h3SuDQTS4DlByZJy0H8H05pd24i.ibGZTdW', 'read', 'authorization_code,password,refresh_token,implicit', '900', '{}');

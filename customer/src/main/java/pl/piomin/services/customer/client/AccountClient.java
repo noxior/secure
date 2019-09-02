@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import pl.piomin.services.customer.model.Account;
 
-@FeignClient(name = "account-service", configuration = AccountClientConfiguration.class)
+@FeignClient(name = "account", configuration = AccountClientConfiguration.class)
 public interface AccountClient {
 
 	@GetMapping("/")

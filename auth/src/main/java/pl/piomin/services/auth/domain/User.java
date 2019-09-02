@@ -16,7 +16,9 @@ import javax.validation.constraints.Size;
 public class User {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE)
+	@SequenceGenerator(name = "global_seq", sequenceName = "global_seq", allocationSize = 1, initialValue = 2)
+	//    @Column(name = "id", unique = true, nullable = false, columnDefinition = "integer default nextval('global_seq')")
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "global_seq")
 	private Long id;
 
 	@Column(nullable = false)
